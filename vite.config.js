@@ -3,7 +3,6 @@ import laravel from 'laravel-vite-plugin';
 const path = require("path");
 
 export default defineConfig({
-    root: path.resolve(__dirname, "src"),
     resolve: {
         alias: {
             "~bootstrap": path.resolve(__dirname, "node_modules/bootstrap"),
@@ -15,7 +14,7 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/js/app.js',
-                'resources/sass/styles.scss',
+                'resources/sass/styles.scss'
             ],
             refresh: true,
         }),

@@ -24,4 +24,4 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/home', [HomepageController::class,'index']);
+Route::get('/home', [HomepageController::class,'index'])->name('home');
