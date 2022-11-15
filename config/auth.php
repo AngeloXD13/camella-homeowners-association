@@ -40,6 +40,15 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+
+        'bod' => [
+            'driver' => 'session',
+            'provider' => 'bods',
+        ],
     ],
 
     /*
@@ -69,6 +78,18 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+
+        'admins' => [
+            'driver' => 'database',
+            'table' => 't1_adminusers',
+        ],
+
+        'bods' => [
+            'driver' => 'database',
+            'table' => 't2_boardofdirector',
+        ],
+
+
     ],
 
     /*

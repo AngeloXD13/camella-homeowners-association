@@ -1,3 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+input {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+nav a {
+    padding: 0.5rem;
+}
+
+.border-1 {
+    border-width: 0.07rem;
+}
+
+.form div {
+    margin-bottom: 15px;
+}
+
+.form div > input {
+    display: block;
+}
+
+.form div > button {
+    padding: 5px;
+}
+
+.form .form-error {
+    font-size: 0.75rem;
+    color: red;
+    font-weight: bold;
+}
+
+.gallery {
+    display: inline-block;
+    margin-top: 20px;
+}
+.close-icon {
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: -10px;
+    padding: 5px 8px;
+}
+.form-image-upload {
+    background: #e8e8e8 none repeat scroll 0 0;
+    padding: 15px;
+}
