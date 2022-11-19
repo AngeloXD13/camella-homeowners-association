@@ -62,6 +62,16 @@ window.addEventListener('DOMContentLoaded', event => {
 
 function showAnnouncements(){
 
-    
+
 }
+
+function trim_description(description){
+    if(description.length > 10) {
+        description = description.substring(0,10);
+        return description;
+    }
+    else
+        return description;
+}
+
 

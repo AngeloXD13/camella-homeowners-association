@@ -8,17 +8,17 @@
     "src": "resources/assets/img/landingpage/bgimage-1080p.png"
   },
   "resources/js/app.js": {
-    "file": "assets/app.56535104.js",
+    "file": "assets/app.9998e383.js",
     "src": "resources/js/app.js",
     "isEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app.fe4f3e01.css",
+    "file": "assets/app.9204f76a.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/sass/styles.scss": {
-    "file": "assets/styles.03b44cfd.css",
+    "file": "assets/styles.56b4503e.css",
     "src": "resources/sass/styles.scss",
     "isEntry": true
   }

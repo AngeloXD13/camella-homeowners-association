@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Announcement;
+use App\Models\AnnouncementFile;
+
 class HomepageController extends Controller
 {
     /**
@@ -14,8 +17,12 @@ class HomepageController extends Controller
     public function index()
     {
         //
+        $public_announcements = Announcement::where([['tag','public'],['status','active']])->latest()->get();
+       // dd($public_announcements);
+       $announcements_files = AnnouncementFile::all();
+       // dd($announcements_files);
 
-        return view('homepage.home');
+        return view('homepage.home',compact('public_announcements','announcements_files'));
     }
 
     /**

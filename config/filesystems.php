@@ -44,6 +44,22 @@ return [
             'throw' => false,
         ],
 
+        'annoucement_images' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/images/announcement'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
+        'information_images' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/images/information'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

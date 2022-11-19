@@ -15,40 +15,6 @@ class BODMembersController extends Controller
     //     $this->middleware('auth');
     // }
 
-    private static function getData()
-    {
-        return [
-            [
-                'DirectorID' => 1,
-                'HoaID' => 123,
-                'UserName' => 'AngeloXD13',
-                'FirstName' => 'Angelo',
-                'MiddleInitial' => 'B',
-                'LastName' => 'Dionisio',
-                'Email' => 'Dionisio@gmail.com',
-                'PhoneNumber' => '09123456789',
-                'Password' => '12345',
-                'Position' => 'CEO',
-                'Tag' => 'Active',
-                'Remarks' => '',
-            ],
-            [
-                'DirectorID' => 2,
-                'HoaID' => 124,
-                'UserName' => 'jovet123',
-                'FirstName' => 'Jovet',
-                'MiddleInitial' => 'B',
-                'LastName' => 'Catapang',
-                'Email' => 'Catapang@gmail.com',
-                'PhoneNumber' => '09123456789',
-                'Password' => '12345',
-                'Position' => 'CTO',
-                'Tag' => 'Not Active',
-                'Remarks' => '',
-            ]
-
-        ];
-    }
 
     /**
      * Display a listing of the resource.

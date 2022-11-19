@@ -8,11 +8,20 @@
         font-size: 2.25rem;
         // float: left;
         text-align: left;
+        margin-bottom: 2rem;
     }
+
     .announcement-item {
         max-width: 26rem;
         margin-left: auto;
         margin-right: auto;
+        background-color: #FD9214;
+
+        .thumbnail-announcement {
+            height: 200px;
+            object-fit: cover;
+
+        }
 
         .announcement-link {
             position: relative;
@@ -58,6 +67,10 @@
             .announcement-caption-subheading {
                 font-style: italic;
                 font-family: $subheadings-font-family;
+                white-space: nowrap;
+               // width: 50px;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
     }
