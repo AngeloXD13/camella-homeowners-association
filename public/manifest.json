@@ -3,12 +3,12 @@
     "file": "assets/map-image.ac8a5781.png",
     "src": "resources/assets/img/map-image.png"
   },
-  "resources/assets/img/landingpage/bgimage-1080p.png": {
-    "file": "assets/bgimage-1080p.7dd2a92f.png",
-    "src": "resources/assets/img/landingpage/bgimage-1080p.png"
+  "resources/assets/img/header-bg.jpg": {
+    "file": "assets/header-bg.d7e00f6d.jpg",
+    "src": "resources/assets/img/header-bg.jpg"
   },
   "resources/js/app.js": {
-    "file": "assets/app.56535104.js",
+    "file": "assets/app.66e910df.js",
     "src": "resources/js/app.js",
     "isEntry": true
   },
@@ -18,7 +18,7 @@
     "isEntry": true
   },
   "resources/sass/styles.scss": {
-    "file": "assets/styles.03b44cfd.css",
+    "file": "assets/styles.b5360a86.css",
     "src": "resources/sass/styles.scss",
     "isEntry": true
   }

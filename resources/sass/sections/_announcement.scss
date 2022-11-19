@@ -1,19 +1,25 @@
 //
-// Portfolio section styling
+// Announcement section styling
 //
 
-#portfolio {
-    .portfolio-item {
+#announcement {
+
+    .subtitle-announcement {
+        font-size: 2.25rem;
+        // float: left;
+        text-align: left;
+    }
+    .announcement-item {
         max-width: 26rem;
         margin-left: auto;
         margin-right: auto;
 
-        .portfolio-link {
+        .announcement-link {
             position: relative;
             display: block;
             margin: 0 auto;
 
-            .portfolio-hover {
+            .announcement-hover {
                 display: flex;
                 position: absolute;
                 width: 100%;
@@ -24,32 +30,32 @@
                 opacity: 0;
                 transition: opacity ease-in-out 0.25s;
 
-                .portfolio-hover-content {
+                .announcement-hover-content {
                     font-size: 1.25rem;
                     color: white;
                 }
             }
 
             &:hover {
-                .portfolio-hover {
+                .announcement-hover {
                     opacity: 1;
                 }
             }
         }
 
-        .portfolio-caption {
+        .announcement-caption {
             padding: 1.5rem;
             text-align: center;
             background-color: $white;
 
-            .portfolio-caption-heading {
+            .announcement-caption-heading {
                 font-size: 1.5rem;
                 font-family: $headings-font-family;
                 font-weight: $headings-font-weight;
                 margin-bottom: 0;
             }
 
-            .portfolio-caption-subheading {
+            .announcement-caption-subheading {
                 font-style: italic;
                 font-family: $subheadings-font-family;
             }
@@ -57,7 +63,7 @@
     }
 }
 
-.portfolio-modal {
+.announcement-modal {
     .modal-dialog {
         margin: 1rem;
         max-width: 100vw;
