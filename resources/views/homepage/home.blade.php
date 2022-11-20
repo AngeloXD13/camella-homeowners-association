@@ -18,10 +18,11 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/luxon@3.1.0/build/global/luxon.min.js" />
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.1.0/build/global/luxon.min.js" ></script>
 
     <!-- Core theme CSS (includes Bootstrap)-->
-    {{-- <link href="css/styles.css" rel="stylesheet" /> --}}
+  
+    
     @vite('resources/sass/styles.scss')
     @vite('resources/js/app.js')
 
@@ -644,8 +645,8 @@
 
             var d1 = new Date(dString);
             var d2 = new Date();
-            console.log('d1', d1);
-            console.log('d2', d2);
+            // console.log('d1', d1);
+            // console.log('d2', d2);
            
             
             var t2 = d2.getTime();
