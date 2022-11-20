@@ -17,9 +17,9 @@ class HomepageController extends Controller
     public function index()
     {
         //
-        $public_announcements = Announcement::where([['tag','public'],['status','active']])->latest()->get();
+        $public_announcements = Announcement::where([['tag','public'],['status','active']])->latest()->get()->toJson();
        // dd($public_announcements);
-       $announcements_files = AnnouncementFile::all();
+       $announcements_files = AnnouncementFile::all()->toJson();
        // dd($announcements_files);
 
         return view('homepage.home',compact('public_announcements','announcements_files'));
