@@ -80,6 +80,26 @@
 
         </div>
     </section>
+
+    <!--BODs-->
+    <section class="page-section" id="bod_page">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Board of Directors</h2>
+                {{-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> --}}
+            </div>
+            <div class="row">
+                <!-- BOD MEMBERS-->
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
+                        laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Services-->
     <section class="page-section" id="services">
         <div class="container">
@@ -201,62 +221,7 @@
             </ul>
         </div>
     </section>
-    <!-- Team-->
-    <section class="page-section bg-light" id="team">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                        <h4>Parveen Anand</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                        <h4>Diana Petersen</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
-                        laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  
     <!-- Clients-->
     <div class="py-5">
         <div class="container">
@@ -358,18 +323,22 @@
     <footer class="footer py-4">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
-                <div class="col-lg-4 my-3 my-lg-0">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; Camella Solamonte Home Owner Association 2022 - All Rights Reserved.</div>
+                {{-- <div class="col-lg-4 my-3 my-lg-0">
                     <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i
                             class="fab fa-twitter"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i
                             class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i
                             class="fab fa-linkedin-in"></i></a>
+                </div> --}}
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#">Privacy Policy</a>
+                    <a class="link-dark text-decoration-none" href="#">Terms of Use</a>
                 </div>
                 <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    <a class="link-dark text-decoration-none me-3" href="https://github.com/AngeloXD13">Dev: AngeloXD13</a>
+                   
                 </div>
             </div>
         </div>
@@ -382,9 +351,8 @@
     <script>
         window.onload = function() {
 
-
-
             getAnnouncementDetails();
+            getBODmembers();
 
         }
 
@@ -448,7 +416,7 @@
         function getAnnouncementDetails() {
 
             var announcements_files = JSON.parse({{ Illuminate\Support\Js::from($announcements_files) }});
-            console.log(announcements_files);
+            //console.log(announcements_files);
 
             var announcements = JSON.parse({{ Illuminate\Support\Js::from($public_announcements) }});
             //console.log(announcements);
@@ -507,7 +475,6 @@
                 subheading.innerText = announcement.description;
                 dateposted.innerText = "Posted on " + calDateAgo(announcement.updated_at);
 
-
                 //announcement modal
 
                 const footer = document.querySelector('footer');
@@ -541,13 +508,9 @@
                     </button>
                 `;
 
-
-
                 const carousel_indicators = announcement_image_slider.querySelector('.carousel-indicators');
 
                 const carousel_inner = announcement_image_slider.querySelector('.carousel-inner');
-
-                
 
                 var img_row = 0;
                 announcements_files.forEach(file => {
@@ -579,7 +542,7 @@
                 });
                 const first_carousel = announcement_image_slider.querySelector('.carousel-item');
                 if(first_carousel != null){
-                    console.log("first_carousel", first_carousel);
+                    //console.log("first_carousel", first_carousel);
                     first_carousel.setAttribute("class", "carousel-item active")
                 }
 
@@ -588,7 +551,6 @@
                     first_slider_btn.setAttribute("class", "carousel-btn active");
                     first_slider_btn.setAttribute("aria-current", "true");
                 }
-
 
                 announcement_modal.innerHTML = `
                     <div class="modal-dialog">
@@ -601,8 +563,7 @@
                                         <div class="modal-body">
                                             <!-- Project details-->
                                             <h2 class="text-uppercase">` + announcement.subject + `</h2>
-                                            <p class="item-intro text-muted">` + "Posted " + calDateAgo(announcement
-                    .updated_at) + ", " + ann_dateposted + `</p>
+                                            <p class="item-intro text-muted">` + "Posted " + calDateAgo(announcement.updated_at) + ", " + ann_dateposted + `</p>
                                             <!--img class="img-fluid d-block mx-auto" src="` + announcement_thumbnail + `" alt="..." /-->
                                             <div class="announcement-img-slider d-block mx-auto"></div>
                                             <p>` + announcement.description + `</p>
@@ -625,29 +586,61 @@
                     div_annoucement_img_slider.appendChild(announcement_image_slider)
                 }
                
-
-                console.log("announcement", announcement_modal);
+                //console.log("announcement", announcement_modal);
                 //append to after the footer
                 footer.parentNode.insertBefore(announcement_modal, footer.nextSibling);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             });
-            console.log(announcements);
+           // console.log(announcements);
 
         }
+
+        function getBODmembers(){
+
+            var information_files = JSON.parse({{ Illuminate\Support\Js::from($information_files) }});
+            console.log(information_files);
+
+            var data_bodmembers = JSON.parse({{ Illuminate\Support\Js::from($bodmembers) }});
+            console.log(data_bodmembers);
+
+            const bod_page = document.getElementById("bod_page");
+            const row = bod_page.querySelector(".row");
+            
+
+            data_bodmembers.forEach(bodmember => {
+
+                var bod_pic = null;
+                information_files.forEach(file => {
+                    if (file.i_content_id === bodmember.id) {
+
+                        bod_pic = "{{ asset('storage/images/information/') }}" + '/' + file.filename;
+
+                    }
+                });
+
+                const bod_item = document.createElement('div');
+                bod_item.setAttribute("class","col-lg-4");
+                row.appendChild(bod_item);
+
+                const bod_member = document.createElement('div');
+                bod_member.setAttribute("class","bod-member");
+                bod_member.innerHTML = `
+                    <img class="mx-auto rounded-circle" src="`+ bod_pic+`" alt="bod_profile_pic" />
+                    <h4>`+ bodmember.heading1 +`</h4>
+                    <h3 class="bod-position text-muted">`+ bodmember.heading2 +`</h3>
+                    <h2 class="bod-email text-muted">`+ bodmember.heading3 +`</h2>
+                    <h2 class="bod-contact number text-muted">`+ bodmember.heading4 +`</h2>
+                `;
+                bod_item.appendChild(bod_member);
+                
+            });
+
+            
+
+
+
+
+        }
+
     </script>
 
 </body>

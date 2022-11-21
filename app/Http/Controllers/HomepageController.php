@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Models\Announcement;
 use App\Models\AnnouncementFile;
+use App\Models\InformationContent;
+use App\Models\InformationCategory;
+use App\Models\InformationFile;
 
 class HomepageController extends Controller
 {
@@ -16,13 +19,19 @@ class HomepageController extends Controller
      */
     public function index()
     {
-        //
-        $public_announcements = Announcement::where([['tag','public'],['status','active']])->latest()->get()->toJson();
-       // dd($public_announcements);
-       $announcements_files = AnnouncementFile::all()->toJson();
-       // dd($announcements_files);
+        //GET PUBLIC ANNOUNCEMENTS AND ACTIVE ANNOUNCEMENTS
+        $public_announcements = Announcement::where([['tag', 'public'], ['status', 'active']])->latest()->get()->toJson();
+        // dd($public_announcements);
+        $announcements_files = AnnouncementFile::all()->toJson();
+        // dd($announcements_files);
 
-        return view('homepage.home',compact('public_announcements','announcements_files'));
+        //GET BODINFORMATION ONLY AND ALL PIC
+        //$categories = InformationCategory::all();
+        $bodmembers = InformationContent::where('i_catergory_id', '1')->get()->toJson();
+        //dd($bodmembers);
+        $information_files = InformationFile::all()->toJson();
+
+        return view('homepage.home', compact('public_announcements', 'announcements_files', 'bodmembers', 'information_files'));
     }
 
     /**
