@@ -38,7 +38,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#page-top"><img src="../assets/img/navbar-logo.svg" alt="..." /></a>
+            <a class="navbar-brand" href="#page-top"><img src="../assets/logo/title-wobg.png" alt="..." /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -47,8 +47,8 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#announcement">Annoucements</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">More Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bod_page">More Info</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
                     <li class="nav-item"><a class="nav-link-btn btn btn-outline-primary btn-sm" href="#login">Login</a>
                     </li>
@@ -60,7 +60,7 @@
     <header class="masthead">
         <div class="container">
 
-            <div class="masthead-heading text-uppercase">Camella Solamonte Homeowners Association</div>
+            <div class="masthead-heading text-uppercase">Camella Solamente Homeowners Association</div>
             <div class="masthead-subheading">A Healthy Community within your Hands...</div>
             <a class="btn btn-primary btn-xl text-uppercase" href="#announcement">Tell Me More</a>
         </div>
@@ -81,72 +81,65 @@
         </div>
     </section>
 
-    <!--BODs-->
-    <section class="page-section" id="bod_page">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Board of Directors</h2>
-                {{-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> --}}
-            </div>
-            <div class="row">
-                <!-- BOD MEMBERS-->
-            </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
-                        laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services-->
-    <section class="page-section" id="services">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Services</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- About-->
     <section class="page-section" id="about">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">About</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h2 class="section-heading text-uppercase">About Us</h2>
+                <h3 class="section-subheading text-muted">Camella has grown from an innovative real estate developer to a formidable industry player over the years. <br>
+                    For more than four decades, we have gone further across the country than any other property developer, building homes and creating tomorrows in places where our homeowners aspire to live.     </h3>
             </div>
-            <ul class="timeline">
+
+            <div class="camsola-images carousel-dark">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators ">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner" >
+                      <div class="carousel-item active">
+                        <img src="../assets/img/landingpage/camsola_pic_1.jpg" class=" img-fluid "  alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/img/landingpage/camsola_pic_2.jpg" class=" img-fluid " alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/img/landingpage/camsola_pic_3.jpg" class=" img-fluid" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/img/landingpage/camsola_pic_4.jpg" class=" img-fluid "  alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+
+            <!-- 21:9 aspect ratio -->
+
+            <br>
+            <br>
+            <br>
+
+            <div class="text-center">
+                <h3 class="section-subheading text-muted">Camella Solamente is located in Brgy.Soro-Soro, Karsada , Batangas City, Philippines</h3>
+            </div>
+
+            <div class="embed-responsive embed-responsive-21by9">
+                <iframe class="embed-responsive-item"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7038.043710985195!2d121.07678429042961!3d13.800399532958888!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x78d99772440b4475!2sCamella%20Solamente!5e0!3m2!1sen!2sph!4v1669437990616!5m2!1sen!2sph"
+                    width="100%" height="450" style="border:0;" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+            {{-- <ul class="timeline">
                 <li>
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg"
                             alt="..." /></div>
@@ -218,12 +211,93 @@
                         </h4>
                     </div>
                 </li>
-            </ul>
+            </ul> --}}
         </div>
     </section>
-  
+
+    <!--BODs-->
+    <section class="page-section bg-light" id="bod_page">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Board of Directors</h2>
+                <h3 class="section-subheading text-muted">The Board of Directors of Camella Solamente Home Owners
+                    Association</h3>
+            </div>
+            <div class="row justify-content-center">
+                <!-- BOD MEMBERS-->
+            </div>
+            {{-- <div class="row ">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
+                        laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div> --}}
+        </div>
+    </section>
+
+    <!--Comitee-->
+    <section class="page-section" id="committee_page">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Committee</h2>
+                <h3 class="section-subheading text-muted">The Committee of Camella Solamente Home Owner Association
+                </h3>
+            </div>
+            <div class="row justify-content-center">
+
+                <!--Comitee-->
+            </div>
+            {{-- <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
+                        laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div> --}}
+        </div>
+    </section>
+
+
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Services & Amenities</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Basketball Court</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
+                        architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Guardhouse with CCTV Camera</h4>
+                    <p class="text-muted">Serving as the main entrance of the vicinity, the Guardhouse execute strict Implementation of Stickers for Residents only.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">24/7 Security</h4>
+                    <p class="text-muted">Monitoring the whole subdivision, guards are always monitoring the situation of the area day and night..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- Clients-->
-    <div class="py-5">
+    {{-- <div class="py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-3 col-sm-6 my-3">
@@ -244,7 +318,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Contact-->
     <section class="page-section" id="contact">
         <div class="container">
@@ -323,7 +397,8 @@
     <footer class="footer py-4">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">Copyright &copy; Camella Solamonte Home Owner Association 2022 - All Rights Reserved.</div>
+                <div class="col-lg-4 text-lg-start">Copyright &copy; Camella Solamente Home Owner Association 2022 -
+                    All Rights Reserved.</div>
                 {{-- <div class="col-lg-4 my-3 my-lg-0">
                     <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i
                             class="fab fa-twitter"></i></a>
@@ -337,8 +412,9 @@
                     <a class="link-dark text-decoration-none" href="#">Terms of Use</a>
                 </div>
                 <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="https://github.com/AngeloXD13">Dev: AngeloXD13</a>
-                   
+                    <a class="link-dark text-decoration-none me-3" href="https://github.com/AngeloXD13">Dev:
+                        AngeloXD13</a>
+
                 </div>
             </div>
         </div>
@@ -349,12 +425,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        window.onload = function() {
+        window.addEventListener('DOMContentLoaded', (event) => {
 
             getAnnouncementDetails();
             getBODmembers();
+            getCommitee();
 
-        }
+        });
 
 
         function trim_description(description) {
@@ -421,8 +498,19 @@
             var announcements = JSON.parse({{ Illuminate\Support\Js::from($public_announcements) }});
             //console.log(announcements);
 
+            const row = document.getElementsByClassName('announcement-row');
+
+            if (announcements.length == 0) {
+                const noitem = document.createElement('div');
+                no_item.innerHTML = `
+                    <h4 class="section-heading"><center>There are no currenty announcements</center></h4><br><br>
+                `;
+                row[0].appendChild(noitem);
+                return;
+            }
+
             announcements.forEach(announcement => {
-                const row = document.getElementsByClassName('announcement-row');
+
                 //console.log(row);
 
                 const boxbootstrap = document.createElement('div');
@@ -498,11 +586,13 @@
                     </div>
                     <div class="carousel-inner">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#`+('announcement-' + announcement.id + '-slider')+`" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#` + ('announcement-' +
+                    announcement.id + '-slider') + `" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#`+('announcement-' + announcement.id + '-slider')+`" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#` + ('announcement-' +
+                    announcement.id + '-slider') + `" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -516,12 +606,14 @@
                 announcements_files.forEach(file => {
                     if (file.announcement_id === announcement.id) {
 
-                        announcement_thumbnail = "{{ asset('storage/images/announcement/') }}" + '/' + file.filename;
+                        announcement_thumbnail = "{{ asset('storage/images/announcement/') }}" + '/' + file
+                            .filename;
 
                         const slider_button = document.createElement('button');
                         slider_button.setAttribute("class", "carousel-btn");
                         slider_button.setAttribute("type", "button");
-                        slider_button.setAttribute("data-bs-target", ('#announcement-' + announcement.id + '-slider'));
+                        slider_button.setAttribute("data-bs-target", ('#announcement-' + announcement.id +
+                            '-slider'));
                         slider_button.setAttribute("data-bs-slide-to", img_row);
                         slider_button.setAttribute("aria-label", ("Slide " + img_row));
                         carousel_indicators.appendChild(slider_button);
@@ -541,13 +633,13 @@
                     }
                 });
                 const first_carousel = announcement_image_slider.querySelector('.carousel-item');
-                if(first_carousel != null){
+                if (first_carousel != null) {
                     //console.log("first_carousel", first_carousel);
                     first_carousel.setAttribute("class", "carousel-item active")
                 }
 
                 const first_slider_btn = announcement_image_slider.querySelector('.carousel-btn');
-                if(first_slider_btn != null){
+                if (first_slider_btn != null) {
                     first_slider_btn.setAttribute("class", "carousel-btn active");
                     first_slider_btn.setAttribute("aria-current", "true");
                 }
@@ -563,7 +655,8 @@
                                         <div class="modal-body">
                                             <!-- Project details-->
                                             <h2 class="text-uppercase">` + announcement.subject + `</h2>
-                                            <p class="item-intro text-muted">` + "Posted " + calDateAgo(announcement.updated_at) + ", " + ann_dateposted + `</p>
+                                            <p class="item-intro text-muted">` + "Posted " + calDateAgo(announcement
+                    .updated_at) + ", " + ann_dateposted + `</p>
                                             <!--img class="img-fluid d-block mx-auto" src="` + announcement_thumbnail + `" alt="..." /-->
                                             <div class="announcement-img-slider d-block mx-auto"></div>
                                             <p>` + announcement.description + `</p>
@@ -581,30 +674,40 @@
                     </div>
                 `;
 
-                if(first_carousel != null){
+                if (first_carousel != null) {
                     const div_annoucement_img_slider = announcement_modal.querySelector('.announcement-img-slider');
                     div_annoucement_img_slider.appendChild(announcement_image_slider)
                 }
-               
+
                 //console.log("announcement", announcement_modal);
                 //append to after the footer
                 footer.parentNode.insertBefore(announcement_modal, footer.nextSibling);
             });
-           // console.log(announcements);
+            // console.log(announcements);
 
         }
 
-        function getBODmembers(){
+        function getBODmembers() {
 
             var information_files = JSON.parse({{ Illuminate\Support\Js::from($information_files) }});
-            console.log(information_files);
+            // console.log(information_files);
 
             var data_bodmembers = JSON.parse({{ Illuminate\Support\Js::from($bodmembers) }});
-            console.log(data_bodmembers);
+            // console.log(data_bodmembers);
 
             const bod_page = document.getElementById("bod_page");
             const row = bod_page.querySelector(".row");
-            
+
+            if (data_bodmembers.length == 0) {
+                const noitem = document.createElement('div');
+                no_item.innerHTML = `
+                    <h4 class="section-heading"><center>There are no currenty BOD member</center></h4><br><br>
+                `;
+                row.appendChild(noitem);
+                return;
+            }
+
+
 
             data_bodmembers.forEach(bodmember => {
 
@@ -617,30 +720,93 @@
                     }
                 });
 
+                if (bod_pic == null) {
+
+                    bod_pic = "assets/img/bod/person_placeholder.png";
+
+                }
+
                 const bod_item = document.createElement('div');
-                bod_item.setAttribute("class","col-lg-4");
+                bod_item.setAttribute("class", "col-lg-4");
                 row.appendChild(bod_item);
 
                 const bod_member = document.createElement('div');
-                bod_member.setAttribute("class","bod-member");
+                bod_member.setAttribute("class", "bod-member");
                 bod_member.innerHTML = `
-                    <img class="mx-auto rounded-circle" src="`+ bod_pic+`" alt="bod_profile_pic" />
-                    <h4>`+ bodmember.heading1 +`</h4>
-                    <h3 class="bod-position text-muted">`+ bodmember.heading2 +`</h3>
-                    <h2 class="bod-email text-muted">`+ bodmember.heading3 +`</h2>
-                    <h2 class="bod-contact number text-muted">`+ bodmember.heading4 +`</h2>
+                    <img class="mx-auto rounded-circle" src="` + bod_pic + `" alt="bod_profile_pic" />
+                    <h4>` + bodmember.heading1 + `</h4>
+                    <h3 class="bod-position text-muted">` + bodmember.heading2 + `</h3>
+                    <a class="bod-email text-muted" href="mailto:` + bodmember.heading3 + `">` + bodmember.heading3 + `</a><br>
+                    <a class="bod-contact number text-muted" href="tel:` + bodmember.heading4 + `">` + bodmember
+                    .heading4 + `</a>
                 `;
                 bod_item.appendChild(bod_member);
-                
+
             });
-
-            
-
-
-
 
         }
 
+        function getCommitee() {
+
+            var information_files = JSON.parse({{ Illuminate\Support\Js::from($information_files) }});
+            //console.log(information_files);
+
+            var data_commiteemembers = JSON.parse({{ Illuminate\Support\Js::from($commiteemembers) }});
+            // console.log(data_commiteemembers);
+
+            const committee_page = document.getElementById("committee_page");
+            const row = committee_page.querySelector(".row");
+
+            if (data_commiteemembers.length == 0) {
+                //console.log("There are no currenty commitee",data_commiteemembers);
+                const commitee_item = document.createElement('div');
+                commitee_item.innerHTML = `
+                    <h4 class="section-heading"><center>There are no currenty commitee member</center></h4><br><br>
+                `;
+                row.appendChild(commitee_item);
+                return;
+            }
+
+            //console.log(data_commiteemembers);
+
+            data_commiteemembers.forEach(commitee => {
+
+                // var commitee_pic = null;
+                // information_files.forEach(file => {
+                //     if (file.i_content_id === commitee.id) {
+
+                //         commitee_pic = "{{ asset('storage/images/information/') }}" + '/' + file.filename;
+
+                //     }
+                // });
+
+                // if (commitee_pic == null) {
+
+                //     commitee_pic = "assets/img/bod/person_placeholder.png";
+
+                // }
+
+                const commitee_item = document.createElement('div');
+                commitee_item.setAttribute("class", "col-lg-4");
+                row.appendChild(commitee_item);
+
+                //  <img class="mx-auto rounded-circle" src="`+ commitee_pic+`" alt="commitee_profile_pic"></img>   
+                //<a class="commitee-email text-muted" href="mailto:`+commitee.heading3+`">`+ commitee.heading3 +`</a><br>
+                //<a class="commitee-contact number text-muted" href="tel:`+commitee.heading4+`">`+ commitee.heading4 +`</a> 
+
+                const commitee_member = document.createElement('div');
+                commitee_member.setAttribute("class", "commitee-member");
+                commitee_member.innerHTML = `
+              
+                <h4>` + commitee.heading1 + `</h4>
+                <h3 class="commitee-position text-muted">` + commitee.heading2 + `</h3>
+               
+            `;
+                commitee_item.appendChild(commitee_member);
+
+            });
+
+        }
     </script>
 
 </body>

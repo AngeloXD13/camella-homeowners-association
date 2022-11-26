@@ -31,7 +31,10 @@ class HomepageController extends Controller
         //dd($bodmembers);
         $information_files = InformationFile::all()->toJson();
 
-        return view('homepage.home', compact('public_announcements', 'announcements_files', 'bodmembers', 'information_files'));
+        //get comitee information
+        $commiteemembers = InformationContent::where('i_catergory_id', '2')->get()->toJson();
+
+        return view('homepage.home', compact('public_announcements', 'announcements_files', 'bodmembers', 'information_files', 'commiteemembers'));
     }
 
     /**

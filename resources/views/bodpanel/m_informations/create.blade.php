@@ -141,7 +141,7 @@
                 <div class="row mb-3">
                     <label class="col-sm-2 col-label-form">Heading 2</label>
                     <div class="col-sm-10">
-                        <input type="text" name="heading2" class="form-control" value="{{ old('heading2') }}" />
+                        <textarea type="text" name="heading2" class="form-control" value="{{ old('heading2') }}" rows="4" > </textarea>
                     </div>
                 </div>
 

@@ -134,9 +134,11 @@
 
                 <div class="row mb-3">
                     <label class="col-sm-2 col-label-form">Heading 2</label>
-                    <div class="col-sm-10">
-                        <input type="text" name="heading2" class="form-control" value="{{ $m_information->heading2 }}" />
+                    <div class="col-sm-9">
+                        <textarea type="text" name="heading2" class="form-control" id="textarea-heading2" >{{ $m_information->heading2 }}</textarea>
+                        
                     </div>
+                    <button type="button" class="col-sm-1 btn btn-secondary" id="newline_btn">Add Line</button>
                 </div>
 
                 <div class="row mb-3">
@@ -187,6 +189,16 @@
     </div>
 
     <script>
+
+        $("#newline_btn").click(function(){
+           
+            var html = $("#textarea-heading2").html();
+            console.log(html);
+            html += "\n (Insert text here) <br>";
+            $("#textarea-heading2").html(html);
+
+        }); 
+
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

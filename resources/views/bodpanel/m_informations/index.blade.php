@@ -77,19 +77,28 @@
                             </tr>
                         @endif
                     </table>
-                    {!! $data->links() !!}
+                  
                 </div>
 
             </div>
 
             <div id="menu1" class="tab-pane fade in">
-                <h3>Board of Directors</h3>
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col col-md-6"><b>Board of Directors</b></div>
+                        <div class="col col-md-6">
+                            <a href="{{ route('m_information.createbod') }}" class="btn btn-success btn-sm float-end">Add BOD Member</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="card-body">
 
                     <table class="table table-bordered">
                         <tr>
                             <th>Name</th>
                             <th>Position</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
                             <th>Action</th>
                         </tr>
                         @if (count($data) > 0)
@@ -102,8 +111,9 @@
                                     <tr>
                                         <td>{{ $data[$category_bodmebers]['heading1'] }}</td>
                                         <td>{{ $data[$category_bodmebers]['heading2'] }}</td>
-                                        {{-- <td>{{ $info->heading3 }}</td> --}}
-
+                                        <td>{{ $data[$category_bodmebers]['heading3'] }}</td>
+                                        <td>{{ $data[$category_bodmebers]['heading4'] }}</td>
+                                    
                                         <td>
                                             <form method="post" action="{{ route('m_information.destroy', $row) }}">
                                                 @csrf
@@ -129,7 +139,7 @@
 
 
 
-                    {!! $data->links() !!}
+                 
                 </div>
             </div>
 

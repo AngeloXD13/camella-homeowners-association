@@ -76,10 +76,17 @@ Route::controller(BOD_LoginController::class)->middleware(['auth:bod'])->group(f
     Route::post('bodpanel/m_announcement/upload', [M_AnnouncementsController::class, 'store_files'])->name('upload');
     Route::post('bodpanel/m_announcement/{m_announcement}', [M_AnnouncementsController::class, 'destroy'])->name('m_announcement.destroy');
     Route::post('bodpanel/m_announcement/{m_announcement}', [M_AnnouncementsController::class, 'update'])->name('m_announcement.update');
-
+    
     // m_infos
     Route::resource('bodpanel/m_information', M_Information_Content_Controller::class);
     Route::post('bodpanel/m_information/{m_information}', [M_Information_Content_Controller::class, 'destroy'])->name('m_information.destroy');
     Route::post('bodpanel/m_information/{m_information}', [M_Information_Content_Controller::class, 'update'])->name('m_information.update');
-    //Route::get('bodpanel/m_information/{m_information}', [M_Information_Content_Controller::class, 'edit'])->name('m_information.edit');
+    
+    //
+    Route::get('bodpanel/m_information/create', [M_Information_Content_Controller::class, 'create'])->name('m_information.create');
+    Route::get('bodpanel/m_information/createbod/', [M_Information_Content_Controller::class, 'createbod'])->name('m_information.createbod');
+    
+    Route::get('bodpanel/m_information/', [M_Information_Content_Controller::class, 'index'])->name('m_information.index');
+    Route::get('bodpanel/m_information/{m_information}/edit_bod', [M_Information_Content_Controller::class, 'edit'])->name('m_information.edit_bod');
+    Route::get('bodpanel/m_information/{m_information}', [M_Information_Content_Controller::class, 'show'])->name('m_information.show');
 });

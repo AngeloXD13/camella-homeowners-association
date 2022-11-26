@@ -20,8 +20,8 @@ class M_Information_Content_Controller extends Controller
     {
         //
         $categories = InformationCategory::all();
-        $data = InformationContent::latest()->paginate(5);
-        return view('bodpanel.m_informations.index', compact('data', 'categories'))->with('i', (request()->input('page', 1) - 1) * 5);
+        $data = InformationContent::latest()->get();
+        return view('bodpanel.m_informations.index', compact('data', 'categories'));
     }
 
     /**
@@ -33,9 +33,18 @@ class M_Information_Content_Controller extends Controller
 
     {
         //
+      
         $categories = InformationCategory::all();
         //dd($categories);
         return view('bodpanel.m_informations.create', compact('categories'));
+    }
+
+    public function createbod()
+    {
+        dd("createBod");
+        $categories = InformationCategory::all();
+        //dd($categories);
+        return view('bodpanel.m_informations.create_bod', compact('categories'));
     }
 
     /**
@@ -134,6 +143,14 @@ class M_Information_Content_Controller extends Controller
          $information_files = InformationFile::where('i_content_id', $m_information['id'])->get();
          $categories = InformationCategory::all();
          return view('bodpanel.m_informations.edit', compact('m_information', 'information_files','categories'));
+    }
+
+    public function edit_bod(InformationContent $m_information)
+    {
+         //dd($m_announcement);
+         $information_files = InformationFile::where('i_content_id', $m_information['id'])->get();
+         $categories = InformationCategory::all();
+         return view('bodpanel.m_informations.edit_bod', compact('m_information', 'information_files','categories'));
     }
 
     /**

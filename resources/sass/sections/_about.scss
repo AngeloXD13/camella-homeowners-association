@@ -1,0 +1,70 @@
+//
+// Timeline section styling
+//
+#about{
+
+    // .camsola-images{
+
+    //     width: 40rem;
+    //     height: 30rem;
+    //     align-content: center;
+
+    //     #carouselExampleIndicators{
+    //         width: 40rem;
+    //         height: 30rem;
+
+    //     }
+
+
+    // }
+
+    .carousel-inner {
+        width: 100%;
+        display: inline-block;
+        position: relative;
+    }
+    .carousel-inner {
+        padding-top: 43.25%;
+        display: block;
+        content: "";
+        align-items: center;
+        justify-content: center;
+    }
+    .carousel-item {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        // background: skyblue;
+        
+    }
+    .carousel-item img {
+      
+        // background: no-repeat center;
+        //  -webkit-background-size: cover;
+        //  -moz-background-size: cover;
+        //  -o-background-size: cover;
+        //  background-size: cover;
+         //display: block;
+         height: 100%;
+        
+        // object-fit: cover;
+      
+    }
+    
+    
+    
+    // .carousel-indicators .active {
+    //   background: #fff;
+    // }
+    // .carousel-indicators li {
+    //   background: rgba(255, 255, 255, 0.4);
+    //   border-top: 20px solid;
+    //   z-index: 15;
+    // }
+
+}
