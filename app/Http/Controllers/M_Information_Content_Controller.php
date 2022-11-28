@@ -6,6 +6,7 @@ use App\Models\InformationContent;
 use App\Models\InformationCategory;
 use App\Models\InformationFile;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
 
@@ -19,9 +20,12 @@ class M_Information_Content_Controller extends Controller
     public function index()
     {
         //
+        $user = Auth::guard('bod');
+        //dd($user->user()->username);
+        $username = $user->user()->username;
         $categories = InformationCategory::all();
         $data = InformationContent::latest()->get();
-        return view('bodpanel.m_informations.index', compact('data', 'categories'));
+        return view('bodpanel.m_informations.index', compact('data', 'categories', 'username'));
     }
 
     /**

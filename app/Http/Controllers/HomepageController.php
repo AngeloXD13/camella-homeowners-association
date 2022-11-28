@@ -9,6 +9,7 @@ use App\Models\AnnouncementFile;
 use App\Models\InformationContent;
 use App\Models\InformationCategory;
 use App\Models\InformationFile;
+use Illuminate\Support\Facades\Auth;
 
 class HomepageController extends Controller
 {
@@ -33,6 +34,8 @@ class HomepageController extends Controller
 
         //get comitee information
         $commiteemembers = InformationContent::where('i_catergory_id', '2')->get()->toJson();
+
+
 
         return view('homepage.home', compact('public_announcements', 'announcements_files', 'bodmembers', 'information_files', 'commiteemembers'));
     }

@@ -9,6 +9,7 @@
         </div>
     @endif
 
+    
     <div class="card">
         <div class="card-header">
             <div class="row">
@@ -19,40 +20,42 @@
             </div>
         </div>
         <div class="card-body">
-            <table class="table table-bordered">
-                <tr>
-                    <th>Subject</th>
-                    <th>Description</th>
-                    <th>Status</th>
-                    <th>Action</th>
-                </tr>
-                @if (count($data) > 0)
-                    @foreach ($data as $row)
-                        <tr>
-                            <td>{{ $row->subject }}</td>
-                            <td>{{ $row->description }}</td>
-                            <td>{{ $row->status }}</td>
-                            <td>
-                                <form method="post" action="{{ route('m_announcement.destroy', $row->id) }}">
-                                    @csrf
-                                    @method('DELETE')
-                                    <a href="{{ route('m_announcement.show', $row->id) }}"
-                                        class="btn btn-primary btn-sm">View</a>
-                                   <a href="{{ route('m_announcement.edit', $row->id) }}" class="btn btn-warning btn-sm">Edit</a>
-                                    {{-- <a href="{{ route('bodmember.edit_role', $row->id) }}" class="btn btn-warning btn-sm">Edit Roles</a> --}}
-
-                                    <input type="submit" class="btn btn-danger btn-sm" value="Delete" />
-                                </form>
-
-                            </td>
-                        </tr>
-                    @endforeach
-                @else
+            <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
                     <tr>
-                        <td colspan="5" class="text-center">No Data Found</td>
+                        <th>Subject</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Action</th>
                     </tr>
-                @endif
-            </table>
+                    @if (count($data) > 0)
+                        @foreach ($data as $row)
+                            <tr>
+                                <td>{{ $row->subject }}</td>
+                                <td>{{ $row->description }}</td>
+                                <td>{{ $row->status }}</td>
+                                <td>
+                                    <form method="post" action="{{ route('m_announcement.destroy', $row->id) }}">
+                                        @csrf
+                                        @method('DELETE')
+                                        <a href="{{ route('m_announcement.show', $row->id) }}"
+                                            class="btn btn-primary btn-sm">View</a>
+                                    <a href="{{ route('m_announcement.edit', $row->id) }}" class="btn btn-warning btn-sm">Edit</a>
+                                        {{-- <a href="{{ route('bodmember.edit_role', $row->id) }}" class="btn btn-warning btn-sm">Edit Roles</a> --}}
+
+                                        <input type="submit" class="btn btn-danger btn-sm" value="Delete" />
+                                    </form>
+
+                                </td>
+                            </tr>
+                        @endforeach
+                    @else
+                        <tr>
+                            <td colspan="5" class="text-center">No Data Found</td>
+                        </tr>
+                    @endif
+                </table>
+            </div>
             {!! $data->links() !!}
         </div>
     </div>

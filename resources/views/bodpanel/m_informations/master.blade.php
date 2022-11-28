@@ -1,18 +1,24 @@
 @extends('bodpanel/layout_bodpanel')
-   
+
 @section('title', 'BOD Dashboard')
 
 @section('bodpanel_content')
 
-   <h1>Board of Directors Dashboard</h1>
-   <div class="container mt-5">
-    <h1 class="text-primary mt-3 mb-4 text-center"><b>Manage Informations</b></h1>
-    
-    @yield('content')
-</div>
+    <!-- Topbar -->
+    @include('bodpanel/layout_topbar')
+    <!-- End of Topbar -->
+
+
+    <div class="container-fluid">
+
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Manage Information</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                    class="fas fa-download fa-sm text-white-50"></i> Generate List (Soon)</a>
+        </div>
+
+        @yield('content')
+    </div>
 
 
 @endsection
-
-
-

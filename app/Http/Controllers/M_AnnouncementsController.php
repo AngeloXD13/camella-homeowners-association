@@ -22,7 +22,12 @@ class M_AnnouncementsController extends Controller
 
         
         $data = Announcement::latest()->paginate(5);
-        return view('bodpanel.m_announcements.index', compact('data'))->with('i', (request()->input('page', 1) - 1) * 5);
+
+        $user = Auth::guard('bod');
+        //dd($user->user()->username);
+        $username = $user->user()->username;
+
+        return view('bodpanel.m_announcements.index', compact('data', 'username'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**

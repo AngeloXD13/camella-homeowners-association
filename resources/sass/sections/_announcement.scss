@@ -15,7 +15,7 @@
         max-width: 26rem;
         margin-left: auto;
         margin-right: auto;
-        background-color: #FD9214;
+        background-color: lightgrey;
 
         .thumbnail-announcement {
             height: 200px;
@@ -60,6 +60,7 @@
             padding: 1.5rem;
             text-align: center;
             background-color: $white;
+            
 
             .announcement-caption-heading {
                 font-size: 1.5rem;
@@ -75,6 +76,7 @@
                // width: 50px;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                max-height: 50px;
             }
         }
     }
@@ -104,6 +106,16 @@
 
         p {
             margin-bottom: 2rem;
+        }
+
+        .announcement-caption-subheading{
+            white-space: nowrap;
+            text-align: left;
+            //overflow: hidden;
+            //text-overflow: ellipsis;
+            white-space: pre-wrap;
+            display: block;
+
         }
 
         ul.list-inline {

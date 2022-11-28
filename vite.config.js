@@ -31,7 +31,11 @@ export default defineConfig({
             input: [
                 "resources/css/app.css",
                 "resources/js/app.js",
-                "resources/sass/styles.scss"
+                "resources/sass/styles.scss",
+                "resources/sass/admin/sb-admin-2.scss",
+                "resources/js/sb-admin-2.js"
+
+
               
             ],
             refresh: true,

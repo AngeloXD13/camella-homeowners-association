@@ -12,14 +12,24 @@
     "src": "resources/js/app.js",
     "isEntry": true
   },
+  "resources/js/sb-admin-2.js": {
+    "file": "assets/sb-admin-2.49b3f45d.js",
+    "src": "resources/js/sb-admin-2.js",
+    "isEntry": true
+  },
   "resources/css/app.css": {
-    "file": "assets/app.75aa8645.css",
+    "file": "assets/app.e819040d.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/sass/styles.scss": {
-    "file": "assets/styles.483ab562.css",
+    "file": "assets/styles.1c1dceae.css",
     "src": "resources/sass/styles.scss",
+    "isEntry": true
+  },
+  "resources/sass/admin/sb-admin-2.scss": {
+    "file": "assets/sb-admin-2.eb559b84.css",
+    "src": "resources/sass/admin/sb-admin-2.scss",
     "isEntry": true
   }
 }

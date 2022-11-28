@@ -258,21 +258,21 @@
 
 
     <!-- Services-->
-    <section class="page-section" id="services">
+    <section class="page-section bg-light" id="services">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Services & Amenities</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <br>
+                {{-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> --}}
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fas fa-basketball fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="my-3">Basketball Court</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">Daily exercise and physical are a must. The Basketball court serves as a playing ground for all homeowners that reside in Camella Solamente</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -324,7 +324,7 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Contact Us</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Ask your inquiries to us.</h3>
             </div>
             <!-- * * * * * * * * * * * * * * *-->
             <!-- * * SB Forms Contact Form * *-->
@@ -532,7 +532,7 @@
                 });
 
                 if (announcement_thumbnail == null) {
-                    announcement_thumbnail = "../assets/img/navbar-logo.svg"
+                    announcement_thumbnail = "assets/logo/logoTitle-wbg.png";
                 }
 
                 announcement_item.innerHTML = `
@@ -659,7 +659,7 @@
                     .updated_at) + ", " + ann_dateposted + `</p>
                                             <!--img class="img-fluid d-block mx-auto" src="` + announcement_thumbnail + `" alt="..." /-->
                                             <div class="announcement-img-slider d-block mx-auto"></div>
-                                            <p>` + announcement.description + `</p>
+                                            <div class= "announcement-caption-subheading text-muted">` + announcement.description + `</div>
                         
                                             <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                                 type="button">
@@ -722,7 +722,7 @@
 
                 if (bod_pic == null) {
 
-                    bod_pic = "assets/img/bod/person_placeholder.png";
+                    bod_pic = "assets/logo/bod/person_placeholder.png";
 
                 }
 
