@@ -392,6 +392,18 @@
 </head>
 
 <body>
+
+    <nav class="navbar navbar-light navbar-expand-lg mb-5"  style="background-color: #212529; ">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><img src="../assets/logo/title-wobg.png" height="50px" alt="..." /></a>
+            <a class="navbar-brand mr-auto" href="#" style="color: white">Camsola System Administrator Login</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+        </div>
+    </nav>
+
     <nav>
         <ul>
             <li><a href="{{route('adminDashboard')}}">Dashboard</a></li>
@@ -402,6 +414,8 @@
             </li>
         </ul>
     </nav>
+
+    
     <div class="container mt-5">
         @yield('adminpanel_content')
     </div>

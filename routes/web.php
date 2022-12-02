@@ -21,9 +21,9 @@ use App\Http\Controllers\M_Information_Content_Controller;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
@@ -32,6 +32,7 @@ Route::get('/', function () {
 // require __DIR__.'/auth.php';
 
 Route::get('/home', [HomepageController::class,'index'])->name('home');
+Route::get('/', [HomepageController::class,'index'])->name('home');
 
 Route::get('/admin', [Admin_LoginController::class, 'index'])->name('login');
 Route::post('/admin/validate_login', [Admin_LoginController::class, 'validate_login'])->name('adminpanel.validate_login');

@@ -50,7 +50,7 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#bod_page">More Info</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link-btn btn btn-outline-primary btn-sm" href="#login">Login</a>
+                    <li class="nav-item"><a class="nav-link-btn btn btn-outline-primary btn-sm" data-bs-toggle="modal" href="#soon-modal">Login</a>
                     </li>
                 </ul>
             </div>
@@ -91,25 +91,53 @@
             </div>
 
             <div class="camsola-images carousel-dark">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" data-interval="2000">
                     <div class="carousel-indicators ">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
                     </div>
                     <div class="carousel-inner" >
-                      <div class="carousel-item active">
+                      <div class="carousel-item active" >
                         <img src="../assets/img/landingpage/camsola_pic_1.jpg" class=" img-fluid "  alt="...">
                       </div>
                       <div class="carousel-item">
                         <img src="../assets/img/landingpage/camsola_pic_2.jpg" class=" img-fluid " alt="...">
                       </div>
-                      <div class="carousel-item">
+                      <div class="carousel-item" >
                         <img src="../assets/img/landingpage/camsola_pic_3.jpg" class=" img-fluid" alt="...">
                       </div>
-                      <div class="carousel-item">
+                      <div class="carousel-item" >
                         <img src="../assets/img/landingpage/camsola_pic_4.jpg" class=" img-fluid "  alt="...">
+                      </div>
+                      <div class="carousel-item" >
+                        <img src="../assets/img/landingpage/camsola_pic_5.jpg" class=" img-fluid "  alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/img/landingpage/camsola_pic_6.jpg" class=" img-fluid "  alt="...">
+                      </div>
+                      <div class="carousel-item" >
+                        <img src="../assets/img/landingpage/camsola_pic_7.jpg" class=" img-fluid "  alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/img/landingpage/camsola_pic_8.jpg" class=" img-fluid "  alt="...">
+                      </div>
+                      <div class="carousel-item" >
+                        <img src="../assets/img/landingpage/camsola_pic_9.jpg" class=" img-fluid "  alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/img/landingpage/camsola_pic_10.jpg" class=" img-fluid "  alt="...">
+                      </div>
+                      <div class="carousel-item" >
+                        <img src="../assets/img/landingpage/camsola_pic_11.jpg" class=" img-fluid "  alt="...">
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -420,6 +448,47 @@
         </div>
     </footer>
 
+
+    <div class="portfolio-modal modal fade align-middle" id="soon-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                {{-- <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div> --}}
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body align-middle text-center">
+                                <!-- Project details-->
+                                <h2 class="">Home Owner / User Login </h2>
+                                <br>
+
+                                <h4 class="text-uppercase">Soon</h4>
+
+                                <br>
+                                
+                                {{-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Threads
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Illustration
+                                    </li>
+                                </ul> --}}
+                                <button class="btn btn-primary btn-l text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Exit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>

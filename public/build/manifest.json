@@ -18,18 +18,18 @@
     "isEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app.e819040d.css",
+    "file": "assets/app.ef5459d9.css",
     "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/sass/admin/sb-admin-2.scss": {
+    "file": "assets/sb-admin-2.188038e9.css",
+    "src": "resources/sass/admin/sb-admin-2.scss",
     "isEntry": true
   },
   "resources/sass/styles.scss": {
     "file": "assets/styles.1c1dceae.css",
     "src": "resources/sass/styles.scss",
-    "isEntry": true
-  },
-  "resources/sass/admin/sb-admin-2.scss": {
-    "file": "assets/sb-admin-2.eb559b84.css",
-    "src": "resources/sass/admin/sb-admin-2.scss",
     "isEntry": true
   }
 }

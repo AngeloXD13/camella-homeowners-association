@@ -6,7 +6,7 @@
 
 @section('adminpanel_content')
 
-   <h1>Administrator Dashboard</h1>
+   {{-- <h1>Administrator Dashboard</h1> --}}
 
    
 

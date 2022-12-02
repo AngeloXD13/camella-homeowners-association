@@ -25,13 +25,13 @@ class BODMembersController extends Controller
     public function index()
     {
         //
-        $user = Auth::guard('bod');
-        //dd($user->user()->username);
-        $username = $user->user()->username;
+        // $user = Auth::guard('bod');
+        // //dd($user->user()->username);
+        // $username = $user->user()->username;
         
         $data = BODMember::latest()->paginate(5);
         //dd($data);
-        return view('adminpanel.bodmembers.index', compact('data','username'))->with('i', (request()->input('page', 1) - 1) * 5);
+        return view('adminpanel.bodmembers.index', compact('data'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**

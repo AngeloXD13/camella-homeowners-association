@@ -3,20 +3,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel 9 Custom Login Registration</title>
+    <link rel="icon" href="../assets/img/landingpage/icon_camella.webp">
+    <title>Camsola Admin Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-    <nav class="navbar navbar-light navbar-expand-lg mb-5" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-light navbar-expand-lg mb-5"  style="background-color: #212529; ">
         <div class="container">
-            <a class="navbar-brand mr-auto" href="#">HOA Administrator Login</a>
+            <a class="navbar-brand" href="#page-top"><img src="../assets/logo/title-wobg.png" height="50px" alt="..." /></a>
+            <a class="navbar-brand mr-auto" href="#" style="color: white">Camsola System Administrator Login</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
         </div>
     </nav>
+
+    <h1 class="text-center">Admininstrator Login</h1>
     <div class="container mt-5">
 
         @yield('content')
