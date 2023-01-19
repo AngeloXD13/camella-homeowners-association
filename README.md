@@ -2,6 +2,14 @@
 
 v3 repo of Camella Solamonte Information System
 
+View:
+
+import database via sql
+
+
+cd c:/hoa-landing-page
+php artisan serve
+
 
 ![title-wbg](https://user-images.githubusercontent.com/47276382/213399319-4ee873e8-b835-470a-9fc9-b06224309ac1.png)
 ![Screenshot_20221201_051337](https://user-images.githubusercontent.com/47276382/213399761-904e785e-91c5-4968-9fb6-a07d77e88ad1.png)
