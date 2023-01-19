@@ -32,3 +32,7 @@ php artisan serve
 
 #### Context Diagram
 ![Context Diagram](https://user-images.githubusercontent.com/47276382/213405365-77012c0c-d505-4000-b173-b8563ccb2462.png)
+
+####Project Status
+![image](https://user-images.githubusercontent.com/47276382/213407157-fb5348d4-e398-4423-a558-a193767ff35b.png)
+
