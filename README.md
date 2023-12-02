@@ -7,9 +7,11 @@ View:
 import database via sql
 
 
+run project locally
+```
 cd c:/hoa-landing-page
-
 php artisan serve
+```
 
 ### Screenshots
 ![title-wbg](https://user-images.githubusercontent.com/47276382/213399319-4ee873e8-b835-470a-9fc9-b06224309ac1.png)
